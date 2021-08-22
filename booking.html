@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            table, th, td { 
+               
+            }
+            th, td{
+                padding: 7px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <form action="/action_page.php">
+       
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <label for="from">Flying from</label>
+                        <br>
+                        <select id="city" name="city">
+                            <option value="Paris">Paris</option>
+                            <option value="Bangkok">Bangkok</option>
+                            <option value="London">London</option>
+                            <option value="Tokyo">Tokyo</option>
+                        </select>
+                    </td>
+                    <td colspan="2">
+                        <label for="to">To</label>
+                        <br>
+                        <select id="city" name="city">
+                            <option value="Paris">Paris</option>
+                            <option value="Bangkok">Bangkok</option>
+                            <option value="London">London</option>
+                            <option value="Tokyo">Tokyo</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label>Departing</label>
+                        <br>
+                        <input type="date" id="Departing">
+                    </td>
+
+                    <td colspan="2">
+                        <label>Returning</label>
+                        <br>
+                        <input type="date" id="Returning">
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Adult">Adult</label>
+                        <br>
+                        <input type="number" value="1" min="1" max="99">
+                    </td>
+
+                    <td>
+                        <label for="Child">Child</label>
+                        <br>
+                        <input type="number" value="0" min="1" max="99">  
+                    </td>
+
+                    <td>
+                        <label for="Infant">Infant</label>
+                        <br>
+                        <input type="number" value="0" min="1" max="99">        
+                    </td>
+
+                    <td>
+                        <label for="Currency">Currency</label>
+                        <br>
+                        <select id="currency" name="currency">
+                            <option value="Euro">EUR</option>
+                            <option value="Thai baht">THB</option>
+                            <option value="Pound sterling">GBP</option>
+                            <option value="Japenese yen">JPY</option>
+                        </select>        
+                    </td>
+                </tr>
+    
+            </table>
+
+            <br>
+            <input style="padding: 8px; margin: 7px; background-color: orangered; color: white;" type="submit" value="SEARCH">
+
+        </form>
+
+    </body>
+
+</html>
